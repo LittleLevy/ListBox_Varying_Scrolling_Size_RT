@@ -1,0 +1,19 @@
+Name: Model
+Type: FolderType
+Children:
+- Name: VarIncrement
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: VarInteger
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 1
+- Name: VarHeight
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 275
+- Name: VarQuery
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "SELECT * FROM Table1 ORDER BY Timestamp"
