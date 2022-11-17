@@ -2,6 +2,7 @@ Name: Model
 Type: FolderType
 Children:
 - Name: VarIncrement
+  Id: g=d73439ed1774496e142b407c36867a55
   Type: BaseDataVariableType
   DataType: Int32
   Value: 0
@@ -10,10 +11,12 @@ Children:
   DataType: Int32
   Value: 1
 - Name: VarHeight
+  Id: g=2cc766fbc256995815eef9a7e560fb53
   Type: BaseDataVariableType
   DataType: Int32
   Value: 275
 - Name: VarQuery
+  Id: g=ed45d57c77afe2de3d41586b84e45cdb
   Type: BaseDataVariableType
   DataType: String
   Value: "SELECT * FROM Table1 ORDER BY Timestamp"
