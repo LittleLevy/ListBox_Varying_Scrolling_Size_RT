@@ -19,6 +19,34 @@ Children:
       Value: {"Id":1,"Namespace":15}
   - Name: VariablesToLog
     Type: BaseObjectType
+    Children:
+    - Name: VarIncrement
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/VarIncrement"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
   - Class: Reference
     Target: ns=12;i=21
     Direction: Forward
@@ -26,20 +54,6 @@ Children:
     Type: PropertyType
     DataType: Boolean
     Value: true
-  - Name: VarIncrement
-    Type: BaseDataVariableType
-    DataType: Int32
-    Value: 0
-    Children:
-    - Name: DynamicLink
-      Type: DynamicLink
-      DataType: NodePath
-      Value: "../../../Model/VarIncrement"
-      Children:
-      - Name: Mode
-        Type: BaseVariableType
-        DataType: DynamicLinkMode
-        Value: 2
   - Name: TableName
     Type: PropertyType
     DataType: String

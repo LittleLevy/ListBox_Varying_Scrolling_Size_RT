@@ -141,6 +141,18 @@ Children:
         Type: PropertyType
         DataType: NodeId
         Value: {"IdType":0,"Id":0,"Namespace":-1}
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: IncrementVariable
+      Type: NetLogic
     - Name: Query
       Type: BaseDataVariableType
       DataType: String
@@ -155,18 +167,6 @@ Children:
         Type: DynamicLink
         DataType: NodePath
         Value: "{Item}/VarIncrement"
-    - Name: LeftMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 30.0
-    - Name: TopMargin
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 50.0
-  - Name: IncrementVariable
-    Type: NetLogic
   - Name: ClearAllButton
     Type: Button
     Children:
@@ -286,6 +286,16 @@ Children:
           Type: PropertyType
           DataType: UInt16
           Value: 0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 30.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 155.0
   - Name: runDataLogger
     Type: CheckBox
     Children:
@@ -316,6 +326,16 @@ Children:
             Type: DynamicLink
             DataType: NodePath
             Value: "{NodeId:ns=7;g=d73439ed-1774-496e-142b-407c36867a55}"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 32.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 192.0
   - Name: QueryText
     Type: TextBox
     Children:
@@ -343,12 +363,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 10.0
+      Value: 30.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 190.0
+      Value: 295.0
   - Name: VeryShortScroll
     Type: ListBox
     Children:
@@ -608,7 +628,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 670.0
+      Value: 520.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -858,6 +878,16 @@ Children:
           Type: PropertyType
           DataType: UInt16
           Value: 0
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 34.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 235.0
   - Name: HeightText
     Type: TextBox
     Children:
